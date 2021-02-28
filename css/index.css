@@ -1,0 +1,364 @@
+			
+			body{
+				padding: 0px;
+				margin: 0px;
+				}
+			a{text-decoration: none;color: #686868;}
+			li{list-style: none;}
+			.error{
+				color: red;
+			}
+			.price,.price1{color: crimson;font-weight: bold;}
+			.href{text-decoration: underline;}			
+			#container{
+				width: 980px;
+				margin: 0px auto;
+				font-size: 10px;
+			}
+			#pagetop{
+				min-height: 100px;
+			}
+			.logo{
+				margin-top: 17px;
+				float: left;
+			}
+			.logo img{
+				height: 65px;
+			}
+			.topinfo{
+				float: left;
+				vertical-align: middle;
+				line-height: 99px;
+			}
+			.topnav{
+				float: right;
+			}
+			.topnav marquee a{
+				color: blue;
+			}
+			.topnav ul li{
+				display: inline-block;
+			}
+			.topnav .topnavlist a{
+				text-decoration:none;
+				color: black;
+			}
+			#teshu{
+				 direction:up;
+				 height:35px;
+				 text-indent: 80px;
+			}
+			#nav{
+				clear: both;
+			}
+			#nav ul{
+				background-color: #ff6a45;
+				height: 5rem;
+				width: 61.25rem;
+				line-height: 6rem;
+				text-align: center;
+				margin: 0px;
+				padding: 0px;
+			}
+			#nav ul li{
+				line-height: 36px;
+				font-size: 16px;
+				font-weight: bold;
+				display: inline-block;
+				width: 100px;
+			}
+			#nav ul li a{
+				color: #ffffff;
+			}
+			#navx{
+				text-indent: 1.5625rem;
+				background-color: #ff6a45;
+				height: 2.75rem;
+				width: 61.25rem;
+			}
+			#navx input,#navx button{
+				 left: 10%;
+				 position: relative;
+			}
+			#navx1{
+				 color: aliceblue;
+				 font-size: 14px;
+			}
+			#navx2{
+				left: 30%;
+				position: relative;
+				font-size: 12px;
+				color: #FFFFFF
+			}
+			#pagebody{
+				min-height: 600px;
+			}
+			
+			#bleft{
+				width: 195px;
+				min-height: 600px;
+				float: left;
+			}
+			.userbox,#brightNew{
+				margin: 5px auto;
+				border: #ff6a45 2px solid;
+				border-right: #ff6a45 2px solid;
+				border-bottom: #ff6a45 2px solid;
+			}
+			#userbox ul{
+				position: relative;
+				left: -10%;
+			}
+			.userbox h2,#brightNew h2{
+				position: relative;
+				left: -2px;
+				top:-2px;
+				margin: 0px;
+				background-color: #ff6a45;
+				text-align: center;
+				width: 195px;
+				height: 30px;
+				line-height: 30px;
+				color: aliceblue;
+			}
+			.userbox li{
+				margin: 10px;
+			}
+			#bmiddle{
+				width: 582px;
+				min-height: 600px;
+				float: left;
+			}
+			.indeximg{
+				margin-top: 5px;
+				width: 582px;
+				height:160px;
+			}
+			.indeximg img{
+				width: 578px;
+				height: 160px;
+				margin-left: 2px;
+			}
+			#indeximg li{
+				cursor: pointer;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				text-align: center;
+				line-height: 20px;
+				left: 420px;
+				position: relative;
+			}
+			.indexli1{
+				background-color: #CCCCCC;
+				font-size: 10px;
+			}
+			.indexli2{
+				background-color: #ffcf5e;
+				font-size: 12px;
+			}
+			#productbox h3{
+				margin: 5px;
+				background-color: #ff6a45;
+				text-align: center;
+				width: 570px;
+				height: 30px;
+				line-height: 30px;
+				color: aliceblue;
+			}
+			#productbox img,#classification img{
+				width: 100px;
+				height: 100px;
+				margin: 4px auto;
+			}
+			#productbox ul{
+				width: 570px;
+			}
+			#productbox ul li{
+				display: inline-block;
+			}
+			#productbox div div{
+				text-align: center;
+			}
+			#bright{
+				width: 195px;
+				min-height: 600px;
+				float: left;
+			}
+			#brightNew{
+				width: 199px;
+			}
+			#brightNew h2{
+				width: 202px;
+			}
+			#classification li{
+				margin: 0px auto;
+			}
+			#classification img{
+				left: -30px;
+				position: relative;
+			}
+			#classification .real{
+				left: 40px;
+				top: -80px;
+				text-align: center;
+				position: relative;
+			}
+			#bodyfooter{
+				min-height: 100px;
+				border: 1px solid #ff5500;
+				clear: both;
+				background-color: #f3f3f3;
+			}
+			#bodyfooter .listnav{
+				display: inline-block;
+				margin: 0 auto;
+				margin: 10px 35px;
+			}
+
+			#location{
+				margin-left: 3px;
+				margin-top: 15px;
+				margin-bottom: 10px;
+				height: 25px;
+				line-height: 25px;
+				background:#ececec;
+				font-size: 14px;
+				text-indent: 12px;
+			}
+			#location_1{
+				font-size: 14px;
+			}
+			#location_1 a{
+				color: #686868;
+			}
+			#location_1 span{
+				margin: 0px 3px;
+			}
+			#location_2{
+				margin-left:3px;
+			}
+			#location_2_1{
+				margin: 0px;
+			}
+			.red{background-color: #939699;}
+			.inde{
+				background-color: #ececec;
+				border: #000000 solid 1px;
+				padding: 0px;
+				font-size: 0px;
+			}
+			.inde a,.inde span{
+				font-size: 14px;
+				width: 80px;
+				text-align: center;
+				line-height: 35px;
+				height: 35px;
+				color: #686868;
+				border-right: 1px solid;
+				display: inline-block;
+			}
+			.inde a:hover{
+				background-color: #f4b13d;
+			}
+			#lodso a{
+				background-color: #ffaa7f;
+				padding: 5px;margin: 5px;
+				position: relative;
+				left: 350px;
+				top: 40px;
+			}
+
+			#clsto{
+				width: 250px;
+				height: 290px;
+				margin-left: 3px;
+			}
+			.clstos{
+				width: 30px;
+				height: 36px;
+				margin-left: 3px;
+			}
+			#proinfolist{
+				width: 500px;
+				float: right
+			}
+			#lodso1{
+				margin-top: 10px;
+			}
+			#lodso1 a{
+				color: #686868;
+				background-color: #ffaa7f;
+				padding: 5px;
+				margin-right: 5px;
+			}
+			#verbose{
+				margin-top: 10px;
+			}
+			#verbose span{
+				border: 1px solid;
+				border-bottom: 0px;
+				padding: 4px 8px;
+				background-color: #FFFFFF;
+				cursor: pointer;
+			}
+			#verboselist{
+				border: 1px solid;
+				height: 200px;
+				margin: 3px 0px;
+			}
+			#verboselist div{
+				display: none;
+			}
+			#shou{
+				font-size: 13px;
+				margin-left: 3px;
+			}
+			#shou h4{
+				background-image: linear-gradient(#ffb5cd,#ffe0e3);
+				text-align: center;
+				padding: 10px;
+			}
+			#beizu{
+				height: 60px;
+			}
+			.error{
+				color: red;
+			}
+			#logindiv{
+				background-color: #ffffff;
+				width: 350px;
+				height: 200px;
+				margin: 0px auto;
+				padding-top: 30px;
+				font-size: 13px;
+				padding-left: 90px;
+				margin-top: 40px;
+			}
+			#logindiv div{
+				margin: 20px 0px;
+			}
+			#table{
+				 border:0px;
+				 text-align: left;
+				 cellspacing:0px;
+				 cellpadding:0px;
+			}
+			#footinfo{
+				text-align: center;
+			}
+			#footinfo1{
+				margin: auto 5px;
+			}
+			#bigimg{
+				width: 300px;
+				height: 350px;
+				position: absolute;
+				top: 265px;
+				overflow: hidden;
+				display: none;
+			}
+			#gegesan{
+				margin: 0px 2px;
+			}
+			

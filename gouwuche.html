@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div id="container">
+			<!-- 网站头部 -->
+			<div id="pagetop">
+				<div class="logo">
+					<img src="img/1610286965(1).jpg">
+				</div>
+				<div class="topinfo">
+					<span>欢迎进入斯妖三商城！<a href="login.html">登录</a>&nbsp;<a href="zhuce.html">注册</a></span>
+				</div>
+				<div class="topnav">
+					<ul class="topnavlist">
+						<li v-for="lists in list"><a href="#">{{lists.name}}</a>&nbsp;| </li>
+						<li id="topnavlistlast"></li>
+					</ul>
+					<div>
+						<marquee id="teshu"><a href="#">重大消息！重大消息！今晚神秘活动即将开起！</a></marquee>
+					</div>
+				</div>
+				<div id="nav">
+					<ul>
+						<li><a href="index.html">网站首页</a></li>
+						<li><a href="#">分类导航</a></li>
+						<li><a href="#">购物帮助</a></li>
+						<li><a href="trolley.html">产品列表</a></li>
+						<li><a href="prolistprice.html">报价单</a></li>
+						<li><a href="jiesuan.html">发货单</a></li>
+					</ul>
+					<div id="navx">
+						<span id="navx1">商品搜索</span>
+						<span><select>
+							<option>所有分类</option><option>最新商品</option><option>热卖商品</option>
+						</select></span>
+						<input type="text" maxlength="100" size="28px"/>
+						<button type="button" >搜索</button>
+						<span id="navx2">告警搜索/组合搜索</span>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 网站中间主体 -->
+			<div id="pagebody">
+				<!-- 左部 -->
+				<div id="bleft">
+					<div class="userbox">
+						<h2>用户信息</h2>
+						<ul>
+							<li><a href="#">欢迎tiger退出</a></li>
+							<li><a href="#">用户资料修改</a></li>
+							<li><a href="#">用户密码修改</a></li>
+							<li><a href="#">订单管理</a></li>
+							<li><a href="#">管理优惠卷（0）</a></li>
+							<li><a href="#">兑换优惠卷</a></li>
+							<li><a href="#">缺货登记</a>&nbsp;<a href="#">登记记录</a></li>
+							<li><a href="gouwuche.html">购物车（2）</a></li>
+							<li><a href="#">我的收藏</a></li>
+							<li><a href="#">对比框</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div id="bmiddle" style="width: 785px;min-height: 200px;">
+					<div id="location">
+						<span>您的位置：</span>
+						<span><a href="index.html">首页</a>>&nbsp;></span>
+						<span><a href="trolley.html">家用电器</a></span>
+					</div>
+					
+					<div>
+						<table id="table" width="785px" style="padding-left: 3px;">
+							<tr>
+								<th>商品名称</th>
+								<th>单价(元)</th>
+								<th>数量</th>
+								<th>类型</th>
+								<th>操作</th>
+							</tr>
+							<tr v-for="commoditys in commodity">
+								<td><a href="#">{{commoditys.name}}</a></td>
+								<td><span class="price">￥{{commoditys.price}}</span></td>
+								<td>
+								    <button v-bind:disabled="commoditys.count === 0" v-on:click="commoditys.count-=1">-</button>
+								    {{ commoditys.count }}
+								   <button v-on:click="commoditys.count+=1">+</button>
+								</td>
+								<td><span>--</span></td>
+								<td><button v-on:click="commoditys.count=0">移除</button></td>
+							</tr>
+						</table>
+						<div id="prilo" style="margin-top: 15px;">
+							<div style="text-align: right;width: 785px;margin-top: 10px;">
+								<span>共{{counts}}件商品</span>
+								<span>价格总计：</span><span class="price">￥{{prices()}}</span>
+								<span>您是：</span><span style="color: #0000FF;">一般会员</span><span>（不享受折扣价）</span>
+							</div>
+							<div style="text-align: right;width: 785px;margin-top: 10px;">
+								<span>获得积分：{{prices()}}</span>
+							</div>
+							<div style="text-align: right;margin-top: 10px;">
+								<span>满￥500免运费,</span>
+								<span>您的订单可以免费送货！</span>
+							</div>
+						</div>
+						<div style="text-align: right;margin-top: 10px;">
+							<button type="button" style="margin-right: 10px;">继续购物</button>
+							<button type="button" onclick="window.location.href=jiesuan.html">现在结算</button>
+						</div>
+					</div>
+				</div>
+				
+				
+					<!-- 底部导航 -->
+				<div id="bodyfooter">
+					<ul>
+						<li v-for="lists in list" class="listnav">
+							<ul>
+								<li><h3>{{lists.h3}}</h3></li>
+								<li><a href="#">>{{lists.a1}}</a></li>
+								<li><a href="#">>{{lists.a2}}</a></li>
+								<li><a href="#">>{{lists.a3}}</a></li>
+								<li><a href="#">>{{lists.a4}}</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 网站尾部 -->
+			<div id="pagefooter">
+				<div id="footinfo">
+					<div id="footinfo1"><span>淘宝店</span><span>易趣店</span>
+					<span>京东店</span><span>有啊店</span></div>
+					<div><span>CopyRight2020.12 版权所有</span></div>
+					<div><span>客服热线：010-88888888，售后服务：010-12345678</span></div>
+					<div><span>客服邮箱：2312573233@qq.com，技术支持：2312573233@qq.com</span></div>
+				</div>
+			</div>
+		</div>
+		<script src="js/primary.js" type="module" charset="utf-8"></script>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/primaryVue.js" type="module"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script type="text/javascript">
+			
+			
+		</script>
+		
+	</body>
+</html>

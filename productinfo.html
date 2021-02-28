@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>产品详细信息</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div id="container">
+			<!-- 网站头部 -->
+			<div id="pagetop">
+				<div class="logo">
+					<img src="img/1610286965(1).jpg">
+				</div>
+				<div class="topinfo">
+					<span>欢迎进入斯妖三商城！<a href="login.html">登录</a>&nbsp;<a href="zhuce.html">注册</a></span>
+				</div>
+				<div class="topnav">
+					<ul class="topnavlist">
+						<li v-for="lists in list"><a href="#">{{lists.name}}</a>&nbsp;| </li>
+						<li id="topnavlistlast"></li>
+					</ul>
+					<div>
+						<marquee id="teshu"><a href="#">重大消息！重大消息！今晚神秘活动即将开起！</a></marquee>
+					</div>
+				</div>
+				<div id="nav">
+					<ul>
+						<li><a href="index.html">网站首页</a></li>
+						<li><a href="#">分类导航</a></li>
+						<li><a href="#">购物帮助</a></li>
+						<li><a href="trolley.html">产品列表</a></li>
+						<li><a href="prolistprice.html">报价单</a></li>
+						<li><a href="jiesuan.html">发货单</a></li>
+					</ul>
+					<div id="navx">
+						<span id="navx1">商品搜索</span>
+						<span><select>
+							<option>所有分类</option><option>最新商品</option><option>热卖商品</option>
+						</select></span>
+						<input type="text" maxlength="100" size="28px"/>
+						<button type="button" >搜索</button>
+						<span id="navx2">告警搜索/组合搜索</span>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 网站中间主体 -->
+			<div id="pagebody">
+				<!-- 左部 -->
+				<div id="bleft">
+					<div class="userbox">
+						<h2>用户信息</h2>
+						<ul>
+							<li><a href="zhuce.html">注册</a>&nbsp;/&nbsp;<a href="login.html">登录</a></li>
+							<li><a href="gouwuche.html">购物车(0)</a></li>
+							<li><a href="#">对比框(0)</a></li>
+						</ul>
+					</div>
+					<div class="userbox" style="height: 140px;">
+						<h2>最近浏览产品</h2>
+						<div>
+							<span><a href="#">
+							<img src="img/a1.jpg" width="70px" height="70px" style="margin-left: 10px;margin-right: 10px;float: left;"></a></span>
+							<div style="margin-top: 20px;">
+								<span>三星sx-42000<br>一体打印机<br></span>
+								<span class="price">￥2000.00</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div id="bmiddle" style="width: 785px;min-height: 560px;">
+					<div id="location">
+						<span>您的位置：</span>
+						<span><a href="index.html" style="color: #686868;">首页</a>>&nbsp;></span>
+						<span><a href="trolley.html" style="color: #686868;">家用电器</a>>&nbsp;></span>
+						<span><a href="trolley.html" style="color: #686868;">生活电器</a>>&nbsp;></span>
+						<span>米家电磁炉家用双频火力智能精准温控小米正品电磁炉</span>
+					</div>
+					<div style="width: 251px;float: left;">
+						<div>
+							<img src="img/mi1.jpg" id="clsto" >
+						</div>
+						<div>
+							<span><img src="img/mi1.jpg" class="clstos" onmouseover="changeimgs()" ></span>
+							<span><img src="img/mi2.jpg" class="clstos" onmouseover="changeimgs()" ></span>
+							<span><img src="img/mi3.jpg" class="clstos" onmouseover="changeimgs()" ></span>
+						</div>
+					</div>
+					<div id="proinfolist">
+						<div>
+							<span style="color: #4343cb;font-weight: 700;">MIJIA/米家 米家电磁炉家用双频火力智能精准温控小米正品电磁炉</span>
+							<span style="margin-left: 20px;">(<a href="#">0篇用户评论</a>|<a href="#">写评论</a>)</span>
+						</div>
+						<div style="margin-top: 15px;margin-bottom: 10px;">
+							<span>商品编号：</span><span>10042710521400</span>
+						</div>
+						<div style="margin-bottom: 15px;">
+							<span>商品积分：</span><span style="color: #FF5500;margin-right: 10px;">1268</span>
+							<span>(<a href="#">积分可兑换优惠卷</a>)</span>
+						</div>
+						<div>
+							<span>商品价格：</span>
+							<span class="price">￥258.00</span>
+						</div>
+						<div style="margin-top: 10px;">
+							<span>商品销量：</span>
+							<span>1689</span>
+						</div>
+						<div style="margin-top: 10px;margin-bottom: 15px;">
+							<span>订购数量：</span>
+							<span><input type="text" name="" id="" value="1" /></span>
+						</div>
+						<div id="bigimg">
+							<img src="img/mi1.jpg" style="position: relative;" >
+						</div>
+						<div id="lodso1">
+							<span><a href="#">加入购物车</a></span>
+							<span><a href="#">加入对比</a></span>
+							<span><a href="#">加入收藏夹</a></span>
+						</div>
+					</div>
+					<hr width="785" style="opacity: 0.3;">
+					<div id="">
+						<div>
+							<span style="font-size: 13px;font-weight: 600;">下一个商品：</span>
+							<span><a href="#">三星sx-42000一体打印机</a></span>
+						</div>
+						<div>
+							<div id="verbose">
+								<span style="background-color: #F4B13D;">详细说明</span>
+								<span>商品评论</span>
+								<span>付款方式</span>
+								<span>邮寄方式</span>
+							</div>
+							<div id="verboselist">
+								<div style="display: block;">
+									<p>双频火力，精准控温</p>
+									<p>99 挡微调控火丨支持低温烹饪丨100+ 烹饪模式</p>
+									<p>用心，让家更有味道</p>
+									<p>双频持续火力，稳如灶火</p>
+									<p>低温烹饪，锁定温度，锁住原汁原味</p></div>
+								<div>
+									<p>偏安不一遇：时尚简约，颜值高，非常喜欢，操作简单，还有很多功能选择，能连接App使用</p>
+									<p>暖暖的冬日：完美！家里准备用天然气！所以选了这款电磁炉！太漂亮！希望我多用两年！</p>
+									<p>木兰易：买了个小米电磁炉，颜值很高，还很时尚，还能与手机联起来，不断了解产品的烹饪方式方法，温度火候还有时间都能精确掌握，感觉买了个宝[微笑]收货速度非常快，2天时间就到了，没耽误事，之前的电磁炉坏了。</p>
+									<p>黄公子：不错，很适合一个人吃饭</p>
+								</div>
+								<div>
+									<p>偏安不一遇：时尚简约，颜值高，非常喜欢，操作简单，还有很多功能选择，能连接App使用</p>
+									<p>暖暖的冬日：完美！家里准备用天然气！所以选了这款电磁炉！太漂亮！希望我多用两年！</p>
+									<p>木兰易：买了个小米电磁炉，颜值很高，还很时尚，还能与手机联起来，不断了解产品的烹饪方式方法，温度火候还有时间都能精确掌握，感觉买了个宝[微笑]收货速度非常快，2天时间就到了，没耽误事，之前的电磁炉坏了。</p>
+									<p>黄公子：不错，很适合一个人吃饭</p>
+								</div>
+								<div>
+									双频火力，精准控温<br>
+									99 挡微调控火丨支持低温烹饪丨100+ 烹饪模式<br>
+									用心，让家更有味道<br>
+									双频持续火力，稳如灶火<br>
+									低温烹饪，锁定温度，锁住原汁原味
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+					<!-- 底部导航 -->
+				<div id="bodyfooter">
+					<ul>
+						<li v-for="lists in list" class="listnav">
+							<ul>
+								<li><h3>{{lists.h3}}</h3></li>
+								<li><a href="#">>{{lists.a1}}</a></li>
+								<li><a href="#">>{{lists.a2}}</a></li>
+								<li><a href="#">>{{lists.a3}}</a></li>
+								<li><a href="#">>{{lists.a4}}</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 网站尾部 -->
+			<div id="pagefooter">
+				<div id="footinfo">
+					<div id="footinfo1"><span>淘宝店</span><span>易趣店</span>
+					<span>京东店</span><span>有啊店</span></div>
+					<div><span>CopyRight2020.12 版权所有</span></div>
+					<div><span>客服热线：010-88888888，售后服务：010-12345678</span></div>
+					<div><span>客服邮箱：2312573233@qq.com，技术支持：2312573233@qq.com</span></div>
+				</div>
+			</div>
+		</div>
+		<script src="js/primary.js" type="module" charset="utf-8"></script>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/primaryVue.js" type="module"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script type="text/javascript">
+			function changeimgs(){
+				document.getElementById("clsto").src=event.srcElement.src;
+			}
+			$(function(){
+				$("#verbose span").click(function(){
+					$(this).css("background-color","#F4B13D");
+					$(this).siblings().css("background-color","#FFFFFF");
+					
+					var temp;
+					if($(this).text()=="详细说明")temp=0;
+					else if($(this).text()=="商品评论")temp=1;
+					else if($(this).text()=="付款方式")temp=2;
+					else temp=3;
+					
+					$("#verboselist div").eq(temp).show().siblings().hide();
+				})
+				//放大镜效果
+				$("#clsto").on("mousemove",function(event){
+					$("#bigimg").show();
+					var x=event.pageX-551;
+					var y=event.pageY-276;
+					var src=$(this).attr('src');
+					
+					$("#bigimg img").attr("src",src);
+					$("#bigimg img").css({top:-y,left:-x});
+				}).on("mouseleave",function(){$("#bigimg").hide();})
+			})
+		</script>
+			
+	</body>
+</html>

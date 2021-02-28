@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body>
+		<div id="container">
+			<!-- 网站头部 -->
+			<div id="pagetop">
+				<div class="logo">
+					<img src="img/1610286965(1).jpg">
+				</div>
+				<div class="topinfo">
+					<span>欢迎进入斯妖三商城！<a href="login.html">登录</a>&nbsp;<a href="zhuce.html">注册</a></span>
+				</div>
+				<div class="topnav">
+					<ul class="topnavlist">
+						<li v-for="lists in list"><a href="#">{{lists.name}}</a>&nbsp;| </li>
+						<li id="topnavlistlast"></li>
+					</ul>
+					<div>
+						<marquee id="teshu"><a href="#">重大消息！重大消息！今晚神秘活动即将开起！</a></marquee>
+					</div>
+				</div>
+				<div id="nav">
+					<ul>
+						<li><a href="index.html">网站首页</a></li>
+						<li><a href="#">分类导航</a></li>
+						<li><a href="#">购物帮助</a></li>
+						<li><a href="trolley.html">产品列表</a></li>
+						<li><a href="prolistprice.html">报价单</a></li>
+						<li><a href="jiesuan.html">发货单</a></li>
+					</ul>
+					<div id="navx">
+						<span id="navx1">商品搜索</span>
+						<span><select>
+								<option>所有分类</option>
+								<option>最新商品</option>
+								<option>热卖商品</option>
+							</select></span>
+						<input type="text" maxlength="100" size="28px" />
+						<button type="button">搜索</button>
+						<span id="navx2">告警搜索/组合搜索</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- 网站中间主体 -->
+			<div id="pagebody">
+				<!-- 左部 -->
+				<div id="bleft">
+					<div class="userbox">
+						<h2>用户信息</h2>
+						<ul>
+							<li><a href="zhuce.html">注册</a>&nbsp;/&nbsp;<a href="login.html">登录</a></li>
+							<li><a href="gouwuche.html">购物车(0)</a></li>
+							<li><a href="#">对比框(0)</a></li>
+						</ul>
+					</div>
+					<div id="userbox" class="userbox">
+						<h2>商品分类</h2>
+						<ul style="width: 170px;">
+							<li class="userbox_li"><span>></span><a href="#">家用电器</a></li>
+							<ul>
+								<li><a href="#">大 &nbsp;家 &nbsp;电</a>&nbsp;|&nbsp;<a href="#">厨房电器</a></li>
+								<li><a href="#">汽车用品</a>&nbsp;|&nbsp;<a href="#">个人护理</a></li>
+								<li><a href="#">生活电器</a>&nbsp;|&nbsp;<a href="#">其他家电</a></li>
+							</ul>
+							<li class="userbox_li"><a href="#"><span>></span>手机数码</a></li>
+							<ul>
+								<li><a href="#">数码相机</a>&nbsp;|&nbsp;<a href="#">手机通讯</a></li>
+								<li><a href="#">时尚影音</a>&nbsp;|&nbsp;<a href="#">数码配件</a></li>
+								<li><a href="#">数码影像</a>&nbsp;|&nbsp;<a href="#">手机配件</a></li>
+							</ul>
+							<li class="userbox_li"><a href="#"><span>></span>电脑产品</a></li>
+							<ul>
+								<li><a href="#">笔 &nbsp;记 &nbsp;本</a>&nbsp;|&nbsp;<a href="#">办公耗材</a></li>
+								<li><a href="#">电脑软件</a>&nbsp;|&nbsp;<a href="#">网络产品</a></li>
+								<li><a href="#">办公设备</a>&nbsp;|&nbsp;<a href="#">电脑整机</a></li>
+							</ul>
+							<li class="userbox_li"><a href="#"><span>></span>电脑产品</a></li>
+							<ul>
+								<li><a href="#">笔 &nbsp;记 &nbsp;本</a>&nbsp;|&nbsp;<a href="#">办公耗材</a></li>
+								<li><a href="#">电脑软件</a>&nbsp;|&nbsp;<a href="#">网络产品</a></li>
+								<li><a href="#">办公设备</a>&nbsp;|&nbsp;<a href="#">电脑整机</a></li>
+							</ul>
+						</ul>
+					</div>
+					<div id="">
+						<img src="img/4%20(2).jpg" width="195px" height="195px">
+					</div>
+					<div class="userbox">
+						<h2>合作加盟</h2>
+						<ul>
+							<li><a href="#">麦子商城</a></li>
+							<li><a href="#">麦子学院</a></li>
+							<li><a href="#">新智达文化传播</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 中部 -->
+				<div id="bmiddle">
+					<div id="indeximg">
+						<div class="indeximg">
+							<img src="img/1.jpg" title="图片1">
+							<img src="img/2.jpg" title="图片2" hidden="hidden">
+							<img src="img/3.jpg" title="图片3" hidden="hidden">
+							<img src="img/4.jpg" title="图片4" hidden="hidden">
+							<img src="img/5.jpg" title="图片5" hidden="hidden">
+						</div>
+						<ul>
+							<li class="indexli2">1</li>
+							<li class="indexli1">2</li>
+							<li class="indexli1">3</li>
+							<li class="indexli1">4</li>
+							<li class="indexli1">5</li>
+						</ul>
+					</div>
+					<div id="productbox">
+						<h3>推荐商品</h3>
+						<ul>
+							<li v-for="i in 10" id="gegesan">
+								<div><a href="productinfo.html"><img src="img/mi1.jpg"></a></div>
+								<div>
+									<div>米家电磁炉</div>
+									<div>小米</div>
+									<div class="price">￥258.00</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="productbox">
+						<h3>热卖商品</h3>
+						<ul>
+							<li v-for="i in 5" id="gegesan">
+								<div><a href="#"><img src="./img/1611230402(1).jpg"></a></div>
+								<div>
+									<div>新型空调</div>
+									<div>某某品牌</div>
+									<div class="price">￥3999.00</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="productbox">
+						<h3>特价商品</h3>
+						<ul>
+							<li v-for="i in 5" id="gegesan">
+								<div><a href="#"><img src="./img/1611230402(1).jpg"></a></div>
+								<div>
+									<div>新型空调</div>
+									<div>某某品牌</div>
+									<div class="price">￥3999.00</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 右部 -->
+				<div id="bright">
+					<div id="brightNew">
+						<h2>网站新闻</h2>
+						<ul>
+							<li><a href="#">>淘宝商城网站模板英文版</a></li>
+							<li><a href="#">>淘宝商城系统英文版</a></li>
+							<li><a href="#">>b2b商城系统</a></li>
+							<li><a href="#">>京东商城系统功能</a></li>
+							<li><a href="#">>stop商城系统</a></li>
+							<li><a href="#">>独立商城系统</a></li>
+							<li><a href="#">>网购商城系统</a></li>
+							<li><a href="#">>php 商城系统</a></li>
+						</ul>
+					</div>
+					<div id="brightNew">
+						<h2>客服服务</h2>
+						<div>
+							<div>电话：***********</div>
+							<div>邮箱：2312573233@qq.com</div>
+							<div>传真：028-66111111</div>
+						</div>
+						<div>
+							<div><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2312573233&site=qq&menu=yes">
+									<img border="0" src="img/qq.jpg" width="20px" height="22px" title="点击这里给我发消息" />售后客服</a></div>
+							<div><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2312573233&site=qq&menu=yes">
+									<img border="0" src="img/qq.jpg" width="20px" height="22px" title="点击这里给我发消息" />售后客服</a></div>
+							<div><a target="_blank" href="http://amos.alicdn.com/msg.aw?v=2&uid=&site=cnalichn&s=10&charset=gbk" rel="external nofollow">
+									<img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=&site=cnalichn&s=10&charset=UTF-8" alt="点击这里给我发消息" /></a></div>
+							<div><a target="_blank" href="http://amos.alicdn.com/msg.aw?v=2&uid=&site=cnalichn&s=10&charset=gbk" rel="external nofollow">
+									<img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=&site=cnalichn&s=10&charset=UTF-8" alt="点击这里给我发消息" /></a></div>
+						</div>
+					</div>
+					<div id="brightNew">
+						<h2>网站新闻</h2>
+						<ul id="classification">
+							<li>
+								<div><a href="#"><img src="./img/1611230402(1).jpg"></a></div>
+								<div class="real">
+									<div>新型空调</div>
+									<div>某某品牌</div>
+									<div class="price">￥3999.00</div>
+								</div>
+							</li>
+							<li>
+							<li>
+								<div><a href="#"><img src="./img/1611230402(1).jpg"></a></div>
+								<div class="real">
+									<div>新型空调</div>
+									<div>某某品牌</div>
+									<div class="price">￥3999.00</div>
+								</div>
+							</li>
+							<li>
+							<li>
+								<div><a href="#"><img src="./img/1611230402(1).jpg"></a></div>
+								<div class="real">
+									<div>新型空调</div>
+									<div>某某品牌</div>
+									<div class="price">￥3999.00</div>
+								</div>
+							</li>
+							<li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 底部导航 -->
+				<div id="bodyfooter">
+					<ul>
+						<li v-for="lists in list" class="listnav">
+							<ul>
+								<li>
+									<h3>{{lists.h3}}</h3>
+								</li>
+								<li><a href="#">>{{lists.a1}}</a></li>
+								<li><a href="#">>{{lists.a2}}</a></li>
+								<li><a href="#">>{{lists.a3}}</a></li>
+								<li><a href="#">>{{lists.a4}}</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 网站尾部 -->
+			<div id="pagefooter">
+				<div id="footinfo">
+					<div id="footinfo1"><span>淘宝店</span><span>易趣店</span>
+						<span>京东店</span><span>有啊店</span></div>
+					<div><span>CopyRight2020.12 版权所有</span></div>
+					<div><span>客服热线：010-88888888，售后服务：010-12345678</span></div>
+					<div><span>客服邮箱：2312573233@qq.com，技术支持：2312573233@qq.com</span></div>
+				</div>
+			</div>
+		</div>
+		<script src="js/primary.js" type="module" charset="utf-8"></script>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/primaryVue.js" type="module"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script type="text/javascript">
+
+
+
+
+
+		</script>
+	</body>
+</html>

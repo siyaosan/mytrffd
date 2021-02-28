@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>发货单</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div id="container">
+			<!-- 网站头部 -->
+			<div id="pagetop">
+				<div class="logo">
+					<img src="img/1610286965(1).jpg">
+				</div>
+				<div class="topinfo">
+					<span>欢迎进入斯妖三商城！<a href="login.html">登录</a>&nbsp;<a href="zhuce.html">注册</a></span>
+				</div>
+				<div class="topnav">
+					<ul class="topnavlist">
+						<li v-for="lists in list"><a href="#">{{lists.name}}</a>&nbsp;| </li>
+						<li id="topnavlistlast"></li>
+					</ul>
+					<div>
+						<marquee id="teshu"><a href="#">重大消息！重大消息！今晚神秘活动即将开起！</a></marquee>
+					</div>
+				</div>
+				<div id="nav">
+					<ul>
+						<li><a href="index.html">网站首页</a></li>
+						<li><a href="#">分类导航</a></li>
+						<li><a href="#">购物帮助</a></li>
+						<li><a href="trolley.html">产品列表</a></li>
+						<li><a href="prolistprice.html">报价单</a></li>
+						<li><a href="jiesuan.html">发货单</a></li>
+					</ul>
+					<div id="navx">
+						<span id="navx1">商品搜索</span>
+						<span><select>
+							<option>所有分类</option><option>最新商品</option><option>热卖商品</option>
+						</select></span>
+						<input type="text" maxlength="100" size="28px"/>
+						<button type="button" >搜索</button>
+						<span id="navx2">告警搜索/组合搜索</span>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 网站中间主体 -->
+			<div id="pagebody">
+				<!-- 左部 -->
+				<div id="bleft">
+					<div class="userbox">
+						<h2>用户信息</h2>
+						<ul>
+							<li><a href="#">欢迎tiger退出</a></li>
+							<li><a href="#">用户资料修改</a></li>
+							<li><a href="#">用户密码修改</a></li>
+							<li><a href="#">订单管理</a></li>
+							<li><a href="#">管理优惠卷（0）</a></li>
+							<li><a href="#">兑换优惠卷</a></li>
+							<li><a href="#">缺货登记</a>&nbsp;<a href="#">登记记录</a></li>
+							<li><a href="gouwuche.html">购物车（2）</a></li>
+							<li><a href="#">我的收藏</a></li>
+							<li><a href="#">对比框</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div id="bmiddle" style="width: 785px;min-height: 200px;">
+					<div id="location">
+						<span>您的位置：</span>
+						<span><a href="index.html">首页</a>>&nbsp;></span>
+						<span><a href="trolley.html">家用电器</a></span>
+					</div>
+					
+					<div>
+						<table id="table" border="0px" width="785px" style="text-align: left;padding-left: 3px;">
+							<tr>
+								<th>商品名称</th>
+								<th>单价(元)</th>
+								<th>数量</th>
+								<th>合计(元)</th>
+								<th>类型</th>
+							</tr>
+							<tr>
+								<td><a href="productinfo.html">MIJIA/米家 米家电磁炉家用双频火力智能精准温控小米正品电磁炉</a></td>
+								<td><span class="price">￥258.00</span></td>
+								<td><span id="number1">1</span></td>
+								<td><span class="price1"></span></td>
+								<td><span>--</span></td>
+							</tr>
+							<tr>
+								<td><a href="#">男士运动鞋 猫抓野外跑鞋2RMB313-1</a></td>
+								<td><span class="price">￥528.00</span></td>
+								<td><span id="number1">1</span></td>
+								<td><span class="price1"></span></td>
+								<td><span>--</span></td>
+							</tr>
+						</table>
+						<div id="prilo" style="margin-top: 15px;">
+							<div style="text-align: right;width: 785px;margin-top: 10px;">
+								<span>共<span id="number"></span>件商品</span>
+								<span>价格总计：</span><span class="price"></span>
+								<span>您是：</span><span style="color: #0000FF;">一般会员</span><span>（不享受折扣价）</span>
+							</div>
+							<div style="text-align: right;margin-top: 10px;">
+								<span>满￥500免运费</span>
+							</div>
+						</div>
+						
+						<div id="shou">
+							<form action="" method="">
+								
+								<h4>使用优惠卷</h4>
+								<span style="padding-left: 160px;">卡号：</span><span><input name="id" id="id" size="14" /></span>&nbsp;&nbsp;&nbsp;
+								<span>密码：</span><span><input name="password" id="password" size="14" /></span>&nbsp;&nbsp;&nbsp;
+								<span><a href="#">验证</a></span>
+								
+								<h4>请填写收货人的详细信息</h4>
+								<div style="padding-left: 160px;">
+									<div style="margin-top: 10px;">
+										<span>姓名：</span><span><input name="id" id="id" /></span>
+									</div>
+									<div style="margin-top: 10px;">
+										<span>电话：</span><span><input name="id" id="id" /></span>
+									</div>
+									<div style="margin-top: 10px;">
+										<span>地址：</span><span><input name="id" id="id" /></span>
+									</div>
+									<div style="margin-top: 10px;">
+										<span>邮编：</span><span><input name="id" id="id" /></span>
+									</div>
+									
+									<div style="margin-top: 15px;">
+										<span>送货方式：</span>
+										<div style="text-indent: 20px;">
+											<input type="radio" name="express" id="express" checked="checked" />
+											<span>快递【实惠快速，一般4天到货，收费12元】</span>
+										</div>
+										<div style="text-indent: 20px;">
+											<input type="radio" name="express" id="express" />
+											<span>EMS快递【邮政特快，一般3天到货，收费23元】</span>
+										</div>
+									</div>
+									
+									<div style="margin: 15px 0px;">
+										<span>发票：</span>
+										<input type="radio" name="or" checked="checked" />
+										<span>不需要</span>
+										<input type="radio" name="or" />
+										<span>需要</span>
+										<span>（开票需要加收5%税费）</span>
+									</div>
+									<div>
+										<span>备注：</span>
+										<input type="text" name="beizu" id="beizu" />
+									</div>
+								</div>
+									
+								<div style="padding: 15px 0px;padding-left: 250px;">
+									<input type="submit" id="" name="" value="提交" />
+								</div>
+									
+							</form>
+						</div>
+						
+					</div>
+				</div>
+				
+				
+					<!-- 底部导航 -->
+				<div id="bodyfooter">
+					<ul>
+						<li v-for="lists in list" class="listnav">
+							<ul>
+								<li><h3>{{lists.h3}}</h3></li>
+								<li><a href="#">>{{lists.a1}}</a></li>
+								<li><a href="#">>{{lists.a2}}</a></li>
+								<li><a href="#">>{{lists.a3}}</a></li>
+								<li><a href="#">>{{lists.a4}}</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 网站尾部 -->
+			<div id="pagefooter">
+				<div id="footinfo">
+					<div id="footinfo1"><span>淘宝店</span><span>易趣店</span>
+					<span>京东店</span><span>有啊店</span></div>
+					<div><span>CopyRight2020.12 版权所有</span></div>
+					<div><span>客服热线：010-88888888，售后服务：010-12345678</span></div>
+					<div><span>客服邮箱：2312573233@qq.com，技术支持：2312573233@qq.com</span></div>
+				</div>
+			</div>
+		</div>
+		<script src="js/primary.js" type="module" charset="utf-8"></script>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/primaryVue.js" type="module"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#pagebody tr:odd td").css("background-color","#eee");
+				$("#pagebody tr:odd").attr("bg","#eee");
+				$("#pagebody tr:even").attr("bg","#FFFFFF");
+				$("#pagebody tr td").hover(
+					function(){$(this).parent().find("td").css("background-color","#d5f4f1")},
+					function(){$(this).parent().children().css("background-color",$(this).parent().attr("bg"));}
+				)
+				
+				
+				var prices=0.0;//总价
+				var number=0.0;//总数量
+				$("#table .price").each(function(){
+					var temp=parseFloat($(this).text().substring(1,$(this).text().length));//单价
+					var plt=$(this).parent().parent().children();
+					var s=parseFloat(plt.children("#number1").text());//数量
+					var ml=temp*s;
+				
+					plt.find(".price1").text("￥"+ml);
+					
+					prices=prices+ml;
+					number+=s;
+				})
+				$("#prilo .price").each(function(){
+					$(this).text("￥"+prices.toFixed(2));
+				})
+				$("#number").text(number);
+			})
+		</script>
+			
+	</body>
+</html>
